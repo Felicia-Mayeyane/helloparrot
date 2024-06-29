@@ -1,0 +1,14 @@
+<!-- views/dashboard.ejs -->
+<% if (notes.length > 0) { %>
+  <h3>Welcome <%= name %></h3>
+  <ul>
+    <% notes.forEach(note => { %>
+      <li><%= note.title %></li>
+    <% }) %>
+  </ul>
+<% } else { %>
+  <p>No notes found.</p>
+<% } %>
+
+
+ 
